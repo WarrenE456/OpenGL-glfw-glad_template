@@ -2,5 +2,5 @@
 
 int main () {
     example::hello_world();
-    return example::make_window();
+    return example::draw_triangle();
 }

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25.1)
 # if the project name is changed also update the run.sh
 project(example)
-add_executable(${PROJECT_NAME} src/main.cpp src/example.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/example.cpp external/glad/src/glad.c)
 
 #       DOWNLOAD ALL SUBMODULES
 
