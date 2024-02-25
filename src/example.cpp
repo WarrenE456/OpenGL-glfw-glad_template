@@ -1,4 +1,4 @@
-#include "../lib/example.hpp"
+#include "headers/example.hpp"
 #include "../include/glad/glad.h"
 #include "../include/GLFW/glfw3.h"
 #include <iostream>
