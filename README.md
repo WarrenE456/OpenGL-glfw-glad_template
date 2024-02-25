@@ -14,7 +14,7 @@ To build the program in release, run these commands.
 ./build.sh release
 ./run.sh release
 ```
-config.sh runs CMake and generates the make file in out/build. build.sh runs the make file and generates the executable. run.sh runs the executable.
+config.sh runs CMake and generates the make file in out/build. build.sh runs the make file and generates the executable. run.sh runs the executable. Run config.sh when the CMakeLists.txt changes and build.sh when the source files change.
 
 Source .cpp files should go in ```src/``` and header .hpp files should go in ```src/headers```. All dependencies go in ```external/``` and external headers can be put in ```include/```. All files in ```src/``` are added to the executable.
 
