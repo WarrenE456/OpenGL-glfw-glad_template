@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.25.1)
-# if the project name is changed also update the run.sh
+# If the project name is changed also update the run.sh
 project(example)
 
-# add all files in src and glad.c to source files for executable
+# Add all files in src and glad.c to source files for executable
 file(GLOB SRC_FILES src/*)
 add_executable(${PROJECT_NAME} ${SRC_FILES} external/glad/src/glad.c)
 
@@ -26,10 +26,10 @@ if (NOT EXISTS ${PROJECT_SOURCE_DIR}/external/glfw/CMakeLists.txt)
     message(FATAL_ERROR "The glfw submodule was not downloaded. GIT_SUBMODULE turned OFF.")
 endif()
 
-# add submodule directories
+# Add glfw cmake directory
 add_subdirectory(external/glfw)
 
-# add directory with lib*.a file
+# Add directory with library fies
 target_link_directories(${PROJECT_NAME} PUBLIC external/glfw/src)
-# add the name of the lib[name].a file
+# Link the library files
 target_link_libraries(${PROJECT_NAME} glfw)
