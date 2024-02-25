@@ -1,7 +1,7 @@
 # OpenGL template wtih GLFW and GLAD
 Setting up OpenGL can be annoying. This project offers a simple template for using OpenGL with GLFW and GLAD, along with CMake for building.
 
-How to use:
+# How to use
 If you are on linux (or an operating system that supports bash files), run the following bash files. Otherwise, open each file in a text edit and copy and paste the commands into the terminal.
 ```
 ./config.sh
