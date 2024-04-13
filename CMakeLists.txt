@@ -6,6 +6,9 @@ project(example)
 file(GLOB SRC_FILES src/*)
 add_executable(${PROJECT_NAME} ${SRC_FILES} external/glad/src/glad.c)
 
+# Add path to include dir
+include_directories(include)
+
 #       DOWNLOAD ALL SUBMODULES
 
 option(GIT_SUBMODULE "Download and check submodules during build" ON)
