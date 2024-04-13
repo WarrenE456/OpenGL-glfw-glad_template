@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25.1)
-# If the project name is changed also update the run.sh
+# If you change the project name, also change it in the run.sh and run.bat
 project(example)
 
 # Add all files in src and glad.c to source files for executable
